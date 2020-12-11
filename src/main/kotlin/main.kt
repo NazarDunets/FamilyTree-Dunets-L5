@@ -1,9 +1,9 @@
 class Person(
-    private val name: String,
-    private val age: Int,
-    private val mother: Person?,
-    private val father: Person?,
-    private val siblings: MutableList<Person>
+    val name: String,
+    val age: Int,
+    val mother: Person?,
+    val father: Person?,
+    val siblings: MutableList<Person>
 ) {
     init {
         // Being siblings works in both ways, doesn't it?
@@ -14,7 +14,6 @@ class Person(
 
     }
 
-    //  It doesn't account for relatives of your siblings
     val numOfRelatives: Int
         get() {
             var result = 0
@@ -34,9 +33,9 @@ class Person(
 }
 
 fun main(args: Array<String>) {
-    val maNigga = getMe()
-    println("maNigga is adult: ${maNigga.isAdult}")
-    println("maNigga has ${maNigga.numOfRelatives} relatives")
+    val me = getMe()
+    println("I'm an adult: ${maNigga.isAdult}")
+    println("I have ${maNigga.numOfRelatives} relatives")
 }
 
 fun getMe(): Person {
