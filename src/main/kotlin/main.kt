@@ -34,8 +34,8 @@ class Person(
 
 fun main(args: Array<String>) {
     val me = getMe()
-    println("I'm an adult: ${maNigga.isAdult}")
-    println("I have ${maNigga.numOfRelatives} relatives")
+    println("I'm an adult: ${me.isAdult}")
+    println("I have ${me.numOfRelatives} relatives")
 }
 
 fun getMe(): Person {
