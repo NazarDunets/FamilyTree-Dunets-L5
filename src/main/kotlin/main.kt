@@ -13,7 +13,7 @@ class Person(
         }
 
     }
-
+    // Actually it only counts older relatives + siblings
     val numOfRelatives: Int
         get() {
             var result = 0
